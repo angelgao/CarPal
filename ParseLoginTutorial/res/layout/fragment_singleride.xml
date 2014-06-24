@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+        
+        <TextView
+        android:id="@+id/rideheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Ride Details" />
+        
+        <TextView
+        android:id="@+id/originCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Origin City}" />
+        
+        <TextView
+        android:id="@+id/originLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Origin Location}" />
+        
+        <TextView
+        android:id="@+id/destinationCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Destination City}" />
+        
+        <TextView
+        android:id="@+id/destinationLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Destination Location}" />
+        
+        <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Date Time}" />
+        
+        <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Price}" />
+        
+        <TextView
+        android:id="@+id/seats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Available Seats}" />
+        
+        <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+        
+        <TextView
+        android:id="@+id/rideheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="User Details" />
+        
+        <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Username}" />
+        <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Email}" />
+        <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{Phone}" />
+        
+        <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Cancel Ride" />
+        <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Request Ride" />
+    </LinearLayout>
+</ScrollView>

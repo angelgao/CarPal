@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+ 
+<EditText
+    android:id="@+id/originCity"
+    android:layout_height="wrap_content"
+    android:hint="Origin City"
+    android:inputType="text"
+    android:layout_width="match_parent">
+</EditText>
+
+<EditText
+    android:id="@+id/destinationCity"
+    android:layout_height="wrap_content"
+    android:hint="Destination City"
+    android:inputType="text"
+    android:layout_width="match_parent">
+</EditText>
+
+<Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:onClick="showDatePickerDialog"
+        android:text="Date of Departure" />
+<!--          -->
+
+<Spinner
+    android:id="@+id/price_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:entries="@array/price_array" />
+
+<EditText
+    android:id="@+id/capacity"
+    android:layout_height="wrap_content"
+    android:hint="Minimum Vehicle Capacity"
+    android:inputType="number"
+    android:layout_width="match_parent">
+</EditText>
+<Spinner
+    android:id="@+id/sort_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:entries="@array/sort_array" />
+<Button
+    android:id="@+id/ButtonPost"
+    android:layout_height="wrap_content"
+    android:text="Search for rides"
+    android:onClick="search"
+     android:gravity="left|center_vertical"
+    android:layout_width="match_parent">
+</Button>
+<!--  -->
+ 
+    </LinearLayout>
+</ScrollView>
